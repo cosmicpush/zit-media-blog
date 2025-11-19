@@ -7,13 +7,13 @@ export default function ComingSoon() {
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-red-50">
       {/* Background decorative elements */}
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
-        <div className="animate-pulse absolute top-20 left-10 h-72 w-72 rounded-full bg-orange-200 opacity-20 mix-blend-multiply blur-3xl filter"></div>
+        <div className="absolute top-20 left-10 h-72 w-72 animate-pulse rounded-full bg-orange-200 opacity-20 mix-blend-multiply blur-3xl filter"></div>
         <div
-          className="animate-pulse absolute top-40 right-10 h-72 w-72 rounded-full bg-orange-300 opacity-20 mix-blend-multiply blur-3xl filter"
+          className="absolute top-40 right-10 h-72 w-72 animate-pulse rounded-full bg-orange-300 opacity-20 mix-blend-multiply blur-3xl filter"
           style={{ animationDelay: "1s" }}
         ></div>
         <div
-          className="animate-pulse absolute -bottom-20 left-1/2 h-72 w-72 rounded-full bg-red-200 opacity-20 mix-blend-multiply blur-3xl filter"
+          className="absolute -bottom-20 left-1/2 h-72 w-72 animate-pulse rounded-full bg-red-200 opacity-20 mix-blend-multiply blur-3xl filter"
           style={{ animationDelay: "2s" }}
         ></div>
       </div>
@@ -43,7 +43,10 @@ export default function ComingSoon() {
           </h1>
 
           {/* Icon with Coming Soon */}
-          <div className="animate-fadeIn flex items-center justify-center gap-3" style={{ animationDelay: "0.2s" }}>
+          <div
+            className="animate-fadeIn flex items-center justify-center gap-3"
+            style={{ animationDelay: "0.2s" }}
+          >
             <Clock className="h-6 w-6 text-orange-600" />
             <p className="text-2xl font-semibold text-gray-700 sm:text-3xl">Coming Soon</p>
           </div>
@@ -116,7 +119,10 @@ export default function ComingSoon() {
           </div>
 
           {/* Footer text */}
-          <p className="animate-fadeIn pt-8 text-sm text-gray-500" style={{ animationDelay: "0.4s" }}>
+          <p
+            className="animate-fadeIn pt-8 text-sm text-gray-500"
+            style={{ animationDelay: "0.4s" }}
+          >
             In the meantime, explore{" "}
             <Link
               href="https://zit.media"
