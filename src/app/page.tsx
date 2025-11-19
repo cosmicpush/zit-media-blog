@@ -7,13 +7,13 @@ export default function ComingSoon() {
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-red-50">
       {/* Background decorative elements */}
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
-        <div className="animate-pulse-slow absolute top-20 left-10 h-72 w-72 rounded-full bg-orange-200 opacity-20 mix-blend-multiply blur-3xl filter"></div>
+        <div className="animate-pulse absolute top-20 left-10 h-72 w-72 rounded-full bg-orange-200 opacity-20 mix-blend-multiply blur-3xl filter"></div>
         <div
-          className="animate-pulse-slow absolute top-40 right-10 h-72 w-72 rounded-full bg-orange-300 opacity-20 mix-blend-multiply blur-3xl filter"
+          className="animate-pulse absolute top-40 right-10 h-72 w-72 rounded-full bg-orange-300 opacity-20 mix-blend-multiply blur-3xl filter"
           style={{ animationDelay: "1s" }}
         ></div>
         <div
-          className="animate-pulse-slow absolute -bottom-20 left-1/2 h-72 w-72 rounded-full bg-red-200 opacity-20 mix-blend-multiply blur-3xl filter"
+          className="animate-pulse absolute -bottom-20 left-1/2 h-72 w-72 rounded-full bg-red-200 opacity-20 mix-blend-multiply blur-3xl filter"
           style={{ animationDelay: "2s" }}
         ></div>
       </div>
@@ -21,7 +21,7 @@ export default function ComingSoon() {
       {/* Content */}
       <div className="relative flex min-h-screen flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <div className="animate-fade-in mb-8">
+        <div className="animate-fadeIn mb-8">
           <Image
             src="/assets/logo/logo.png"
             alt="Zit Media Logo"
@@ -35,7 +35,7 @@ export default function ComingSoon() {
         {/* Main Content */}
         <div className="mx-auto max-w-3xl space-y-6 text-center">
           {/* Title */}
-          <h1 className="animate-fade-in text-5xl font-bold text-gray-900 sm:text-6xl lg:text-7xl">
+          <h1 className="animate-fadeIn text-5xl font-bold text-gray-900 sm:text-6xl lg:text-7xl">
             Zit Media{" "}
             <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
               Blog
@@ -43,20 +43,26 @@ export default function ComingSoon() {
           </h1>
 
           {/* Icon with Coming Soon */}
-          <div className="animate-fade-in-delay-1 flex items-center justify-center gap-3">
+          <div className="animate-fadeIn flex items-center justify-center gap-3" style={{ animationDelay: "0.2s" }}>
             <Clock className="h-6 w-6 text-orange-600" />
             <p className="text-2xl font-semibold text-gray-700 sm:text-3xl">Coming Soon</p>
           </div>
 
           {/* Description */}
-          <p className="animate-fade-in-delay-2 mx-auto max-w-2xl text-lg leading-relaxed text-gray-600 sm:text-xl">
+          <p
+            className="animate-fadeIn mx-auto max-w-2xl text-lg leading-relaxed text-gray-600 sm:text-xl"
+            style={{ animationDelay: "0.4s" }}
+          >
             We&apos;re crafting something special for you. Our blog will be your go-to resource for
             social media insights, marketing tips, and inspiring stories from the world of content
             creation.
           </p>
 
           {/* Features grid */}
-          <div className="animate-fade-in-delay-2 mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
+          <div
+            className="animate-fadeIn mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3"
+            style={{ animationDelay: "0.4s" }}
+          >
             <div className="rounded-2xl border border-gray-100 bg-white/80 p-6 shadow-lg backdrop-blur-sm transition-shadow hover:shadow-xl">
               <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-orange-500 to-orange-600">
                 <Pencil className="h-6 w-6 text-white" />
@@ -99,7 +105,7 @@ export default function ComingSoon() {
           </div>
 
           {/* CTA Button */}
-          <div className="animate-fade-in-delay-2 pt-8">
+          <div className="animate-fadeIn pt-8" style={{ animationDelay: "0.4s" }}>
             <Link
               href="https://zit.media"
               className="inline-flex transform items-center gap-2 rounded-full bg-gradient-to-r from-orange-600 to-red-600 px-8 py-4 text-lg font-semibold text-white transition-all hover:scale-105 hover:shadow-xl"
@@ -110,7 +116,7 @@ export default function ComingSoon() {
           </div>
 
           {/* Footer text */}
-          <p className="animate-fade-in-delay-2 pt-8 text-sm text-gray-500">
+          <p className="animate-fadeIn pt-8 text-sm text-gray-500" style={{ animationDelay: "0.4s" }}>
             In the meantime, explore{" "}
             <Link
               href="https://zit.media"

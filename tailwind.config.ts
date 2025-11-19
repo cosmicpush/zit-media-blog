@@ -12,8 +12,8 @@ export default {
         brand: "#ff4b2a",
       },
       fontFamily: {
-        sans: ["var(--font-space-grotesk)", "system-ui", "sans-serif"],
-        mono: ["var(--font-jetbrains-mono)", "monospace"],
+        sans: ["var(--font-zit-sans)", "system-ui", "sans-serif"],
+        mono: ["var(--font-zit-mono)", "monospace"],
       },
     },
   },
